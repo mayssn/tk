@@ -14,6 +14,18 @@ export default defineType({
     {name: 'bodyText_en', title: 'Body Text (EN)', type: 'text'},
     {name: 'bodyText_ar', title: 'Body Text (AR)', type: 'text'},
 
+    // ⭐ Explore Units Title for Trucks & Vans
+    {
+      name: 'exploreTruckVanTitle_en',
+      title: 'Explore Trucks & Vans (EN)',
+      type: 'string',
+    },
+    {
+      name: 'exploreTruckVanTitle_ar',
+      title: 'Explore Trucks & Vans (AR)',
+      type: 'string',
+    },
+
     {
       name: 'note_en',
       title: 'Bottom Note (EN, optional)',

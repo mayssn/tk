@@ -5,9 +5,16 @@ export default defineType({
   title: 'Site Settings',
   type: 'document',
   fields: [
-    {name: 'companyName_en', title: 'Company Name (EN)', type: 'string'},
-    {name: 'companyName_ar', title: 'Company Name (AR)', type: 'string'},
+    // DUMMY TITLE FIELD (fixes the crash)
+    {
+      name: 'title',
+      title: 'Title (internal)',
+      type: 'string',
+      initialValue: 'Site Settings',
+    },
+
     {name: 'logo', title: 'Logo', type: 'image'},
+
     {
       name: 'navLinks',
       title: 'Header Navigation Links',
@@ -19,20 +26,6 @@ export default defineType({
             {name: 'label_en', title: 'Label (EN)', type: 'string'},
             {name: 'label_ar', title: 'Label (AR)', type: 'string'},
             {name: 'href', title: 'Path (e.g. /trailers)', type: 'string'},
-          ],
-        },
-      ],
-    },
-    {
-      name: 'trustedBy',
-      title: 'Trusted By Logos',
-      type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            {name: 'name', title: 'Internal Name', type: 'string'},
-            {name: 'logo', title: 'Logo Image', type: 'image'},
           ],
         },
       ],

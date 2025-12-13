@@ -10,16 +10,7 @@ export default defineType({
     {name: 'pageTitle_ar', title: 'Page Title (AR)', type: 'string'},
 
     // LEFT COLUMN
-    {
-      name: 'leftTitle_en',
-      title: 'Left Section Title (EN)',
-      type: 'string',
-    },
-    {
-      name: 'leftTitle_ar',
-      title: 'Left Section Title (AR)',
-      type: 'string',
-    },
+
     {
       name: 'leftBody_en',
       title: 'Left Section Body (EN)',
@@ -32,16 +23,7 @@ export default defineType({
     },
 
     // RIGHT COLUMN
-    {
-      name: 'rightTitle_en',
-      title: 'Right Section Title (EN)',
-      type: 'string',
-    },
-    {
-      name: 'rightTitle_ar',
-      title: 'Right Section Title (AR)',
-      type: 'string',
-    },
+
     {
       name: 'rightBody_en',
       title: 'Right Section Body (EN)',
