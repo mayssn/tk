@@ -103,6 +103,31 @@ export default defineType({
       type: 'image',
     },
 
+    // PHOTO GALLERY SECTION
+    {
+      name: 'galleryTitle_en',
+      title: 'Gallery Section Title (EN)',
+      type: 'string',
+    },
+    {
+      name: 'galleryTitle_ar',
+      title: 'Gallery Section Title (AR)',
+      type: 'string',
+    },
+    {
+      name: 'gallery',
+      title: 'Photo Gallery',
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
+    },
+
     // ABOUT NABER & ALLAYAN
     {name: 'aboutTitle_en', title: 'About Title (EN)', type: 'string'},
     {name: 'aboutTitle_ar', title: 'About Title (AR)', type: 'string'},
@@ -141,6 +166,15 @@ export default defineType({
           ],
         },
       ],
+    },
+
+    // SEO KEYWORDS
+    {
+      name: 'seoKeywords',
+      title: 'SEO Keywords',
+      type: 'text',
+      description: 'Enter relevant keywords separated by commas (e.g., "cooling units, refrigeration, climate control"). These will be indexed and used dynamically for search optimization.',
+      rows: 3,
     },
   ],
 })

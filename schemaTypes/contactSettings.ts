@@ -21,7 +21,8 @@ export default defineType({
     {name: 'emailAddress', title: 'Email Address', type: 'string'},
 
     // Phone
-    {name: 'phoneNumber', title: 'Phone Number', type: 'string'},
+    {name: 'phoneNumber_en', title: 'Phone Number (EN)', type: 'string'},
+    {name: 'phoneNumber_ar', title: 'Phone Number (AR)', type: 'string'},
 
     // WhatsApp
     {name: 'whatsappLabel_en', title: 'WhatsApp Label (EN)', type: 'string'},
